@@ -1,0 +1,199 @@
+\documentclass[a4paperx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\usepackage{pstricks-add}
+\pagestyle{empty}
+
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\thefootnote}{\arabic{footnote}} 
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+%\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[spanish,mexico]{babel}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{makeidx}
+\usetikzlibrary{arrows}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=red]{hyperref}
+\usepackage{wrapfig}
+
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\bfseries\Large}
+\ChNumVar{\Huge}
+\ChTitleVar{\bfseries\Large}
+\ChRuleWidth{0.5 pt}
+\ChNameUpperCase
+\ChTitleUpperCase
+\makeindex
+
+
+\begin{document}
+
+\title{Pr\'actica 1}
+\author{
+Aguilar Z\'u\~niga,Gibran 308071087 \and  Alexis Hernández castro 313006636 \and Jesus Martin Ortega Martinez 310183534 \and Daniel Lopez Hernández 309167282 \and Jaime Alberto Martínez López 309256753
+}
+
+\maketitle
+
+\begin{abstract}
+Introducir al lenguaje C y manejo de apuntadores y memoria.
+\end{abstract}
+
+\section{Preguntas}
+
+\textbf{NOTA:}\\
+
+Para ejecutar los programas con Makefile debes pararte en la cartpeta adecuada y poner make para generar el ejecutable, despues ./Programas y se ejecutara el programa correcto. Ejemplo de ejecuci\'on con Makefile.\\
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Buble1.png}
+\caption{Ejecuci\'on con MakeFile}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Buble2.png}
+\caption{Ejecuci\'on con MakeFile}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Buble3.png}
+\caption{Ejecuci\'on con MakeFile}
+\end{figure}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Buble4.png}
+\caption{Ejecuci\'on con MakeFile}
+\end{figure}
+
+\begin{enumerate}
+
+\item{Ordenamiento burbuja con apuntadores.}
+
+\begin{enumerate}
+\item{Realizar un programa en C, en el cual con cada iteraci\'on del ordenamiento burbuja, se modifiquen las referencias a los datos en memoria, y no los datos contenidos en la misma.}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{BubleSort.png}
+\caption{C\'odigo Buble Sort}
+\end{figure}
+
+\item{Se deber \'a imprimir en cada iteraci \'on las direcciones de memoria empleando formateadores de cadena especificos para esta acci\'on (\%p)}
+\end{enumerate}
+
+\item{Keylogger}
+
+\begin{enumerate}
+\item{Empleando la llamada al sistema read en un sistema operativo derivado
+de UNIX, interceptar la informaci\'on del dispositivo de entrada $”$teclado$”$
+y guardarla en un archivo de texto.}
+
+\item{Las entradas del teclado se se almacenan en estructuras(structs) de
+tipo input event, que almacenan entre otros datos el c \'odigo de la
+tecla pulsada o liberada, la definici \'on de este tipo de estructuras s
+encuentra en sys/types.h y linux/input.h.}
+
+\item{El dispositivo que genera este tipo de estructuras se encuentra de
+manera l\'ogica en /dev/input/ en sistemas derivados de UNIX y se
+maneja como un evento, el evento cambia entre cada sistema operativo.}
+\end{enumerate}
+
+
+\item{Multiplicaci \'on dinamica de matrices.}\\
+
+\begin{enumerate}
+
+\item{Empleando las funciones malloc(), calloc(), realloc() y free(), crear
+arreglos bidimensionales que representen matrices a multiplicar.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{MatricesMalloc.png}
+\caption{C\'odigo Matrices Multiplicaci\'on}
+\end{figure}
+
+\item{Las dimensiones de las matrices deber\'an ser especificadas por el
+usuario, y no se debe emplear mas espacio de almacenamiento que el
+requerido por las matrices.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{MatricesDimension.png}
+\caption{C\'odigo Matrices Multiplicaci\'on}
+\end{figure}
+
+\item{Se tiene la opci\'on de solicitar los elementos de las matrices al usuario o generarlos de manera automatica a trav\'es de funciones de generaci\'on de numeros aleatorios propias de C. En ambos casos de deben imprimir las matrices y el resultado de la multiplicaci \'on.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{EjecucionMatrices.png}
+\caption{C\'odigo Matrices Multiplicaci\'on}
+\end{figure}
+
+\end{enumerate}
+
+\item{2K38Y}
+
+\begin{enumerate}
+
+\item{Imprimir en pantalla la fecha exacta con segundos para la Ciudad de
+M\'exico en la que la forma de medir el tiempo con epoch desbordar\'a
+el espacio de almacenamiento valido para un entero de 32 bits.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{2K38YEjecucion.png}
+\caption{Ejecuci\'on 2K38Y }
+\end{figure}
+
+\item{Restricci\'on. no m\'as de 5 lineas de c\'odigo dentro de la funci\'on main.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{2K38YCodigo.png}
+\caption{C\'odigo 2K38Y }
+\end{figure}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

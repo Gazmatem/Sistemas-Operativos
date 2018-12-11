@@ -1,0 +1,125 @@
+\documentclass[a4paperx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\usepackage{pstricks-add}
+\pagestyle{empty}
+
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\thefootnote}{\arabic{footnote}} 
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+%\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[spanish,mexico]{babel}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{makeidx}
+\usetikzlibrary{arrows}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=red]{hyperref}
+\usepackage{wrapfig}
+
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\bfseries\Large}
+\ChNumVar{\Huge}
+\ChTitleVar{\bfseries\Large}
+\ChRuleWidth{0.5 pt}
+\ChNameUpperCase
+\ChTitleUpperCase
+\makeindex
+
+
+\begin{document}
+
+\title{Pr\'actica 4}
+\author{
+Aguilar Z\'u\~niga,Gibran 308071087 \and  Alexis Hernández castro 313006636 \and Jesus Martin Ortega Martinez 310183534 \and Daniel Lopez Hernández 309167282 \and Jaime Alberto Martínez López 309256753
+}
+
+\maketitle
+
+\begin{abstract}
+Algoritmos de Calendarizaci\'on.
+\end{abstract}
+
+\section{Preguntas}
+
+\begin{enumerate}
+
+\item{Para esta practica se deben simular los siguientes algoritmos de calendarizaci\'on. FCFS, SJF, y Round Robin(EXTRA).}\\
+
+\item{Cada uno de los programas leer\'a una lista de procesos con datos referentes a los procesos. EL programa simular\'a la ejecucu\'on de los procesos e imprimir\'a el tiempo que le toma a cada proceso completarse (tiempo de ejecuci\'on) y el tiempo de espera, as\'i como calcular el promedio de ejecuci\'on.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{FCFSEjecucion}
+\caption{Ejecuci\'on con Makefile de algoritmo FCFSE}
+\end{figure}
+
+\item{La entrada puede ser a trav\'es de la linea de comandos o de un archivo
+con nombre espec\'ifico en un directorio espec\'ifico.(Los procesos pueden ser
+especificados para ser simulados por el programa o generados con datos de
+manera aleatoria pero esto resta un punto de la cali\'icaci\'on total de la pr\'actica) Los procesos ser\'an leidos linea a linea, en el orden en el que estos llegar\'ian al sistema operativo. Cada proceso debe tener un nombre, seguido
+de el tiempo de llegada del proceso, , seguido del tiempo total de ejecuci\'on, el tiempo transcurrido entre llamadas al sistema(interrupciones),
+el tiempo trascurrido en esperas y procesamiento, y finalmente el valor de
+prioridad (a menor valor mayor prioridad). }\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{SFJEjecucion}
+\caption{Ejecuci\'on con Makefile de algoritmo SFJE}
+\end{figure}
+
+\item{El intervalo de tiempo para los procesos puede ser asignado aleatoria-
+mente, pero de ser elegido arbitariamente emplear el valor 3. La salida
+debe tener la lista de procesos y el tiempo que tomo a cada uno terminar su ejecuci\'on, adem\'as del tiempo promedio de ejecuci\'on para todos los
+procesos en la lista.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{RounRobinEjecucion}
+\caption{Ejecuci\'on con Makefile de algoritmo RounRobin}
+\end{figure}
+
+\end{enumerate}
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\begin{thebibliography}{99}
+
+\bibitem{Shell} https://labprograms.wordpress.com/2009/07/24/cpu-scheduling-algorithms-fcfs-sjf-and-round-robin/ {\it Fundamentos de sistemas operativos}. 
+
+\bibitem{ShellSort}  https://www.thecrazyprogrammer.com/2014/11/c-cpp-program-for-first-come-first-served-fcfs.html. {\it Fundamentos de sistemas operativos}. 
+
+\end{thebibliography}
+
+\end{document}

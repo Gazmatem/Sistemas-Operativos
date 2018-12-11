@@ -1,0 +1,288 @@
+\documentclass[a4paperx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\usepackage{pstricks-add}
+\pagestyle{empty}
+
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\thefootnote}{\arabic{footnote}} 
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+%\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[spanish,mexico]{babel}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{makeidx}
+\usetikzlibrary{arrows}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=red]{hyperref}
+\usepackage{wrapfig}
+
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\bfseries\Large}
+\ChNumVar{\Huge}
+\ChTitleVar{\bfseries\Large}
+\ChRuleWidth{0.5 pt}
+\ChNameUpperCase
+\ChTitleUpperCase
+\makeindex
+
+
+\begin{document}
+
+\title{Pr\'actica 3}
+\author{
+Aguilar Z\'u\~niga,Gibran 308071087 \and  Alexis Hernández castro 313006636 \and Jesus Martin Ortega Martinez 310183534 \and Daniel Lopez Hernández 309167282 \and Jaime Alberto Martínez López 309256753
+}
+
+\maketitle
+
+\begin{abstract}
+Manejo de mmap(), read(), Child's Play, fork(), pipe(), write() y kill().
+\end{abstract}
+
+\section{Preguntas}
+
+\begin{enumerate}
+
+\item{mmap()}\\
+
+
+\begin{enumerate}
+
+\item{Leer un archivo a trav\'es de la llamada al sistema read(), imprimir su
+contenido y el valor de su descriptor de archivo.}\\
+
+\begin{flushright}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{Read}
+\caption{C\'odigo lectura archivo con Read()}
+\end{figure}
+
+\end{flushright}
+
+\item{Describir como se mapea este archivo en memoria}\\
+
+read: Lee el archivo indicado por el descriptor de archivo fd, la función read () lee bytes de entrada cnt en el área de memoria indicada por buf. Una lectura () exitosa actualiza el tiempo de acceso para el archivo.
+
+
+\item{Abrir un archivo mediante la llamada al sistema mmap() e imprimir
+su contenido}\\
+
+\begin{flushright}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{ReadMMMPA}
+\caption{C\'odigo lectura archivo con MMMPA()}
+\end{figure}
+
+\end{flushright}
+
+\item{Describir como se mapea este archivo en memoria.}\\
+
+\item{Realizar una comparaci\'on entre ambos m\'etodos y las ventajas de uno
+sobre el otro}\\
+
+mmap utiliza tabla de páginas de su proceso, una estructura de datos que utiliza su CPU para asignar espacios de direcciones. La CPU traducirá las direcciones virtuales a las f\'isicas, y lo hará de acuerdo con la tabla de páginas configurada por su núcleo.
+
+Cuando accede a la memoria asignada por primera vez, su CPU genera un error de página. El núcleo del sistema operativo puede saltar, "arreglar" el acceso a la memoria no válida asignando memoria y haciendo E \/ S de archivos en el búfer recién asignado, luego continuar la ejecución del programa como si nada hubiera pasado.
+
+
+\item{Para ambos casos realizar un diagrama de la estructura del proceso
+en memoria}\\
+
+Si estás utilizando archivos de manera aleatoria, mmap es más sencillo e implica menos llamadas al sistema.
+
+Además, si cuenta la cantidad de veces que se copian los datos a medida que se mueven desde el disco a su programa, el uso de lectura generalmente implica 1 copia adicional.
+
+En el lado de desventaja, el manejo de errores con mmap () se realiza con señales, lo que puede agregar complejidad.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{DiagramaMemoria}
+\caption{Diagrama de estructura de proceso en memoria.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{DiagramaMemoria2}
+\caption{Diagrama de estructura de proceso en memoria.}
+\end{figure}
+
+
+
+\end{enumerate}
+
+\item{Child's Play.}\\
+
+\begin{enumerate}
+
+\item{Crear un programa que cree un proceso hijo a trav\'es de la llamada
+al sistema fork(), el proceso original deber\'a imprimir su Process ID,
+y su Parent Process ID.}\\
+
+\begin{flushright}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{PadreHijo1}
+\caption{C\'odigo lcreacion padre e hijo}
+\end{figure}
+
+\end{flushright}
+
+\item{Incluir una condici\'on para la creaci\'on del proceso hijo, es decir, ejecutar el fork() unicamente cuando ocurra un evento en el sistema operativo que lo desencadene.}\\
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{PadreHijo1}
+\caption{C\'odigo la creacion padre e hijo}
+\end{figure}
+\item{El proceso hijo debe imprimir de igual manera su PID y su PPID, y deber\'a remarcarse la asociaci\'on entre ambos procesos.}\\
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{PadreHijo1}
+\caption{C\'odigo la creacion padre e hijo}
+\end{figure}
+
+\item{Generar c\'odigo diferente para cada proceso teniendo en cuenta lo siguiente}\\
+  
+  p = f o r k ( ) ;\\
+ \quad i f (p>0)\\
+ 
+  \qquad Codigo para e l XXXXX\\
+ 
+  \quad e l s e\\
+ 
+  \qquad Codigo para e l XXXX\\
+  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{PadreHijo2}
+\caption{C\'odigo la creacion padre e hijo}
+\end{figure}
+
+\end{enumerate}
+
+\item{Tuberias}
+
+\begin{enumerate}
+
+\item{Escribir un programa el cual genere dos procesos, P1 y P2. P1
+recibir\'a una cadena de caracteres y se la enviar\'a a P2. P2 concatenar\'a la cadena recibida con otra cadena definida en P2 sin emplear funciones de manejo de cadenas contenidas en string.h. La cadena
+generada ser\'a devuelta a P1 para ser impresa en la salida estandar.}\\
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{Tuberias}
+\caption{C\'odigo comunicaci\'on de proceso padre e hijo}
+\end{figure}
+
+\item{En este problema deberan utilizarse las llamadas al sistema read(),
+write(), close(), fork() y pipe() teniendo en cuenta lo siguiente\\
+
+i n t fd [ 2 ] ; //Ar r eglo de d e s c r i p t o r e s de a r chi v o s\\
+pipe ( fd ) ; //Creacion de l pipe , pasando como argumento e l
+a r r e g l o de d e s c r i p t o r e s\\
+fd [ 0 ] ; // De s c r ipt o r de a r chivo de l pipe para l e c t u r a\\
+fd [ 1 ] ; // De s c r ipt o r de a r chivo de l pipe para e s c r i t u r a}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{Pipe}
+\caption{C\'odigo comunicaci\'on de proceso padre e hijo}
+\end{figure}
+
+\item{Considerar que se deben crear dos pipes, y por lo tanto dos arreglos
+de descriptores de archivos, y que el c\'odigo debe ser diferente para
+el proceso padre y el hijo.}\\
+
+\end{enumerate}
+
+\item{Signal}\\
+
+\begin{enumerate}
+
+\item{A trav\'es de la implementaci\'on de "signal.h" comunicar dos procesos
+(un proceso padre y un hijo), permitiendo la interacci\'on entre ambos,
+y \'analizar el programa "matando" al proceso hijo.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{ProcesoKill}
+\caption{C\'odigo comunicaci\'on de proceso padre e hijo}
+\end{figure}
+
+\item{Cada senal a implementar deber\'a desencadenar una acci\'on, por ejemplo la impresi\'on de un mensaje.}\\
+
+\item{Tener en cuenta que debe implementarse una funci\'on que ser\'a llamada con la ejecuci\'on de cada senal.}\\
+
+\item{La llamada al sistema kill() recibe como parametro el PID y la senal
+a enviar}.\\
+
+
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Codigo1.png}
+\caption{C\'odigo Signal}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Codigo2.png}
+\caption{C\'odigo Signal}
+\end{figure}
+
+
+
+\end{enumerate}
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\begin{thebibliography}{99}
+
+\bibitem{Shell} https://www.ibm.com/support/knowledgecenter/en/SSLTBW\\
+\_2.3.0/com.ibm.zos.v2r3.bpxbd00/rtrea.htm. {\it Fundamentos de sistemas operativos}. 
+
+\bibitem{ShellSort}  https://www.geeksforgeeks.org/signals-c-set-2/. {\it Fundamentos de sistemas operativos}. 
+
+\end{thebibliography}
+
+\end{document}

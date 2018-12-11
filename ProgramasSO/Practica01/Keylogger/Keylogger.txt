@@ -1,0 +1,615 @@
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 30, valor: 0, rd: 24
+a
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 30, valor: 0, rd: 24
+a
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 46, valor: 0, rd: 24
+c
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 30, valor: 0, rd: 24
+a
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 30, valor: 0, rd: 24
+a
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 20, valor: 0, rd: 24
+t
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 21, valor: 0, rd: 24
+y
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 21, valor: 0, rd: 24
+y
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 50, valor: 0, rd: 24
+m
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 25, valor: 0, rd: 24
+p
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 47, valor: 0, rd: 24
+v
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 48, valor: 0, rd: 24
+b
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 37, valor: 0, rd: 24
+k
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 37, valor: 0, rd: 24
+k
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 36, valor: 0, rd: 24
+j
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 33, valor: 0, rd: 24
+f
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 32, valor: 0, rd: 24
+d
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 9, valor: 0, rd: 24
+8
+Tipo: 1, Codigo: 10, valor: 0, rd: 24
+9
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 11, valor: 0, rd: 24
+0
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 28, valor: 0, rd: 24
+-
+Tipo: 1, Codigo: 31, valor: 0, rd: 24
+s
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 49, valor: 0, rd: 24
+n
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 22, valor: 0, rd: 24
+u
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 30, valor: 0, rd: 24
+a
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 30, valor: 0, rd: 24
+a
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, Codigo: 19, valor: 0, rd: 24
+r
+Tipo: 1, Codigo: 35, valor: 0, rd: 24
+h
+Tipo: 1, Codigo: 34, valor: 0, rd: 24
+g
+Tipo: 1, Codigo: 20, valor: 0, rd: 24
+t
+Tipo: 1, Codigo: 23, valor: 0, rd: 24
+i
+Tipo: 1, Codigo: 24, valor: 0, rd: 24
+o
+Tipo: 1, Codigo: 17, valor: 0, rd: 24
+w
+Tipo: 1, Codigo: 18, valor: 0, rd: 24
+e
+Tipo: 1, 

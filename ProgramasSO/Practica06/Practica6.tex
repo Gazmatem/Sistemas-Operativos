@@ -1,0 +1,187 @@
+\documentclass[a4paperx]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\usepackage{pstricks-add}
+\pagestyle{empty}
+
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\thefootnote}{\arabic{footnote}} 
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amsthm}
+%\usepackage[latin1]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[spanish,mexico]{babel}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{makeidx}
+\usetikzlibrary{arrows}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pstricks-add}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=red]{hyperref}
+\usepackage{wrapfig}
+
+\usepackage[Glenn]{fncychap}
+\ChNameVar{\bfseries\Large}
+\ChNumVar{\Huge}
+\ChTitleVar{\bfseries\Large}
+\ChRuleWidth{0.5 pt}
+\ChNameUpperCase
+\ChTitleUpperCase
+\makeindex
+
+
+\begin{document}
+
+\title{Pr\'actica 6}
+\author{
+Aguilar Z\'u\~niga,Gibran 308071087 \and  Alexis Hernández castro 313006636 \and Jesus Martin Ortega Martinez 310183534 \and Daniel Lopez Hernández 309167282 \and Jaime Alberto Martínez López 309256753
+}
+
+\maketitle
+
+\begin{abstract}
+Describir como implementar una unidad de manejo de memoria en un
+sistema operativo multiusuario. Simular el algoritmo First Fit, Best Fit de administraci\'on de memoria.
+\end{abstract}
+
+\section{Preguntas}
+
+\begin{enumerate}
+
+
+\item{Describir como implementar una unidad de manejo de memoria en un
+sistema operativo multiusuario.}\\
+
+\item{Simular el algoritmo First Fit, Best Fit de administraci\'on de memoria.}\\
+
+
+\item{Seguir los siguientes pasos para la implementaci\'on, teniendo en cuenta
+que es una simulaci\'on, por lo que todo deber\'ia ser provisto a trav\'es de un
+archivo de configuraci\'on o preguntando al usuario.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{FirstFitEjecucion}
+\caption{Ejecucion del algoritmo FirstFit}
+\end{figure}
+
+\begin{enumerate}
+
+\item{Obtener el tamano del segmento, el numero de archivos a ser alojados y su tamano correspondiente. (N\'umero de bloques, n\'umero de
+archivos)}\\
+
+\item{Comprobar si es posible emplear ambos algoritmos con los datos
+proporcionados. Dando como salida un resultado exitoso, o si los
+recursos son insuficientes, manteniendo una salida lo mas descriptiva
+posible sobre la ejecuci\'on.}\\
+
+\item{Para el algoritmo first fit, alojar el proceso al primer segmento libre,
+y marcarlo como ocupado para que no pueda ser ocupado.}\\
+
+\item{Para el algoritmos best fit, se deben ordenar los segmentos por tama\~no, y se debe alojar el proceso en el segmento que sea igual o de mayor
+tama\~no que el proceso y marcarlo para que no pueda ser usado.}\\
+
+\item{Para este programa es posible utilizar arreglos o bien, memoria din\'amica.}\\
+
+\end{enumerate}
+
+\item{Peluqueria}\\
+
+\begin{enumerate}
+
+\item{Asuma que una peluqueria que usted visita tiene tres sillas, y el
+area de espera tiene 4 revistas y una cantidad ilimitada de libros de
+sistemas operativos para otros clientes. Debido a los problemas de
+espacio el numero total de clientes en la peluqueria esta restringido
+a 10.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{BestFitEjecucion}
+\caption{Ejecucion del algoritmo FirstFit}
+\end{figure}
+
+\item{Un cliente no debe entrar a la peluqueria si esta al limite de su
+capacidad. Una vez dentro, si no hay un peluquero libre, el cliente
+toma una revista, y si no estan disponibles, toma un libro.}\\
+
+\item{Una vez que un peluquero este libre, uno de los clientes que haya
+leido una de las revistas por mas tiempo, es quien puede pasar a la
+silla, y si hay clientes leyendo un libro de sistemas operativos, aquel
+que haya leido la mayor cantidad de tiempo, puede tomar la revista.}\\
+
+\item{Cuando un corte de cabello se nalice, cualquier peluquero puede
+aceptar el pago, pero ya que solo se tiene una caja, solo se puede
+aceptar un pago a la vez.}\\
+
+\item{Los peluqueros dividen su tiempo entre cortar el cabello, aceptar
+pagos, y durmiendo en su silla esperando por clientes(Ellos no leen
+revistas ni libros de sistemas operativos).}\\
+
+\item{La llegada de un cliente puede ser simulada a trav\'es del teclado(por
+ejemplo, al presionar l), el hilo principal puede iniciar el hilo de la
+llegada de un nuevo cliente.}\\
+
+\item{Se puede asumir que un maximo de 50 clientes va a llegar.}\\
+
+\item{Utilizar tiempos aleatorios en el termino del corte.}\\
+
+\item{Salida esperada: Se deben imprimir las acciones de la siguiente manera:
+Peluquero 1: descansando\\
+Lee revista: Cliente n\\
+Con peluquero1: cliente n\\
+Paga: clienten\\
+cobra peluquero2}\\
+
+\item{El formato es decisi\'on del programador.}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{PeluqueriaEjecucion}
+\caption{Ejecucion del algoritmo FirstFit}
+\end{figure}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+\begin{thebibliography}{99}
+
+\bibitem{Shell} https://www.ibm.com/support/knowledgecenter/en/SSLTBW\\
+\_2.3.0/com.ibm.zos.v2r3.bpxbd00/rtrea.htm. {\it Fundamentos de sistemas operativos}. 
+
+\bibitem{ShellSort}  https://www.geeksforgeeks.org/signals-c-set-2/. {\it Fundamentos de sistemas operativos}. 
+
+\end{thebibliography}
+
+\end{document}
